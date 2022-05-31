@@ -14,6 +14,10 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    // 关闭组件命名校验规则
+    'vue/multi-word-component-names': 'off',
+    // 关闭对any的警告
+    '@typescript-eslint/no-explicit-any': 'off'
   }
 }
